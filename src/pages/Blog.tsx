@@ -1,5 +1,5 @@
 import React from "react";
-import { Calendar, ArrowRight } from "lucide-react";
+import { Calendar } from "lucide-react";
 import { data } from "../utils/blog-assests";
 
 interface BlogPost {
@@ -55,11 +55,6 @@ const Blog: React.FC = () => {
                   </h3>
 
                   <p className="text-gray-600 mb-4">{post.excerpt}</p>
-
-                  <button className="inline-flex items-center text-purple-600 hover:text-purple-700 font-medium group text-sm">
-                    Read More
-                    <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                  </button>
                 </div>
               </div>
             ))}

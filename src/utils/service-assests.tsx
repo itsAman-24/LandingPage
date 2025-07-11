@@ -59,7 +59,7 @@ export const services = [
         'Email Marketing',
         'Analytics & Reporting'
       ],
-      technologies: ['Google Analytics', 'Google Ads', 'Facebook Ads', 'Mailchimp', 'SEMrush', 'Hootsuite'],
+      technologies: ['Google Analytics', 'Google Ads', 'Facebook Ads', 'Mailchimp'],
       startingPrice: '$2,000'
     }
   ];

@@ -37,7 +37,7 @@ const Services: React.FC = () => {
               {services.map((service, index) => (
                 <div
                   key={index}
-                  className="bg-white p-8 rounded-2xl border border-gray-200 hover:border-purple-200 hover:shadow-xl transition-all duration-300"
+                  className="bg-white p-8 rounded-2xl border-2 border-gray-300 hover:border-purple-200 hover:shadow-xl transition-all duration-300"
                 >
                   <div className="text-purple-600 mb-6">
                     {service.icon}
@@ -146,12 +146,7 @@ const Services: React.FC = () => {
               >
                 Start Your Project
               </Link>
-              <Link 
-                to="/portfolio"
-                className="inline-flex items-center px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-purple-600 transition-colors"
-              >
-                View Our Work
-              </Link>
+              
             </div>
           </div>
         </div>
