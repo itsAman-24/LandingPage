@@ -2,13 +2,14 @@ import React from 'react';
 import { ArrowRight, CheckCircle } from 'lucide-react';
 import { services } from '../utils/service-assests';
 import { Link } from 'react-router-dom';
+import {steps} from "../utils/service-assests"
 
 const Services: React.FC = () => {
 
 
   return (
     <div className="min-h-screen pt-16">
-      {/* Hero Section */}
+      {/* Hero */}
       <section className="py-20 bg-gradient-to-br from-purple-50 via-blue-50 to-indigo-100">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-6xl mx-auto text-center">
@@ -29,7 +30,7 @@ const Services: React.FC = () => {
         </div>
       </section>
 
-      {/* Services Grid */}
+      {/* Services */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-6xl mx-auto">
@@ -96,7 +97,7 @@ const Services: React.FC = () => {
         </div>
       </section>
 
-      {/* Process Section */}
+      {/* Process */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-6xl mx-auto">
@@ -110,12 +111,7 @@ const Services: React.FC = () => {
             </div>
             
             <div className="grid md:grid-cols-4 gap-8">
-              {[
-                { step: '01', title: 'Discovery', description: 'We understand your business goals and requirements' },
-                { step: '02', title: 'Strategy', description: 'We develop a comprehensive plan and timeline' },
-                { step: '03', title: 'Development', description: 'We build your solution with regular updates' },
-                { step: '04', title: 'Launch', description: 'We deploy and provide ongoing support' }
-              ].map((phase, index) => (
+              {steps.map((phase, index) => (
                 <div key={index} className="text-center">
                   <div className="bg-purple-600 text-white w-16 h-16 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">
                     {phase.step}
@@ -129,7 +125,6 @@ const Services: React.FC = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
       <section className="py-20 bg-purple-600 text-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">

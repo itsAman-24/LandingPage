@@ -5,7 +5,6 @@ const About: React.FC = () => {
  
   return (
     <div className="min-h-screen pt-16">
-      {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-purple-50 via-blue-50 to-indigo-100">
         <div className="max-w-5xl mx-auto text-center px-4">
           <h1 className="text-5xl font-bold text-gray-900 mb-6">
@@ -18,7 +17,7 @@ const About: React.FC = () => {
         </div>
       </section>
 
-      {/* Story Section */}
+      {/* Story */}
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 px-4">
           <div className="space-y-6">
@@ -45,7 +44,7 @@ const About: React.FC = () => {
         </div>
       </section>
 
-      {/* Stats Section */}
+      {/* Stats */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-12">
@@ -75,7 +74,7 @@ const About: React.FC = () => {
         </div>
       </section>
 
-      {/* Values Section */}
+      {/* Values */}
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-12">

@@ -13,7 +13,7 @@ const Development: React.FC = () => {
         </div>
       </section>
 
-      {/* Tech Proficiency */}
+      {/* Tech  */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="text-3xl font-semibold text-gray-900 mb-8 text-center">Core Technologies</h2>
@@ -36,7 +36,7 @@ const Development: React.FC = () => {
         </div>
       </section>
 
-      {/* Development Process */}
+      {/* Development */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-3xl font-semibold text-gray-900 mb-12 text-center">Development Process</h2>
@@ -54,7 +54,6 @@ const Development: React.FC = () => {
         </div>
       </section>
 
-      {/* CTA */}
       <section className="py-20 bg-purple-600 text-white text-center">
         <h2 className="text-3xl font-bold mb-4">Let's Build Something Great Together</h2>
         <p className="text-lg mb-6">Have an idea? We’ll help you bring it to life with the right technologies.</p>

@@ -40,7 +40,7 @@ const Contact: React.FC = () => {
     }
 
     setIsSubmitting(true);
-    await new Promise((r) => setTimeout(r, 1000)); // i Used this to show a experience to user that the form i being submitted after showing loading screen for 1 second
+    await new Promise((r) => setTimeout(r, 1000));
     setIsSubmitting(false);
     setIsSubmitted(true);
     setFormData({ name: "", email: "", message: "" });
@@ -49,17 +49,23 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen pt-16 bg-gray-50">
-      <section className="py-20 px-4 max-w-2xl mx-auto">
-        <h1 className="text-5xl text-center font-bold text-gray-900 mb-4">
-          Contact <span className="text-purple-600">Us</span>
-        </h1>
+    <div className="min-h-screen pt-10 bg-gray-50">
+      {/* Header */}
+      <section className="py-20 px-4 sm:px-6 md:px-8 bg-gradient-to-br from-purple-50 via-blue-50 to-indigo-100">
+        <div className="max-w-2xl mx-auto text-center">
+          <h1 className="text-5xl sm:text-5xl font-bold text-gray-900 mb-4">
+            Contact <span className="text-purple-600">Us</span>
+          </h1>
 
-        <p className="text-center text-gray-600 mb-10">
-          We'd love to hear from you. Please fill out the form below.
-        </p>
+          <p className="text-base sm:text-lg text-gray-600 mb-2">
+            We'd love to hear from you. Please fill out the form below.
+          </p>
+        </div>
+      </section>
 
-        <div className="bg-white p-8 rounded-xl shadow-md">
+      {/* Form */}
+      <section className="pb-20 px-4 sm:px-6 md:px-8">
+        <div className="max-w-2xl mx-auto mt-6 bg-white p-6 sm:p-8 rounded-xl shadow-md">
           {isSubmitted ? (
             <div className="text-center">
               <CheckCircle className="h-12 w-12 text-green-500 mx-auto mb-4" />
@@ -70,6 +76,7 @@ const Contact: React.FC = () => {
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-6">
+              {/* Name  */}
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">
                   Name *
@@ -89,6 +96,7 @@ const Contact: React.FC = () => {
                 )}
               </div>
 
+              {/* Email */}
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">
                   Email *
@@ -108,6 +116,7 @@ const Contact: React.FC = () => {
                 )}
               </div>
 
+              {/* Message */}
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">
                   Message *
@@ -127,6 +136,7 @@ const Contact: React.FC = () => {
                 )}
               </div>
 
+              {/* Submit */}
               <button
                 type="submit"
                 disabled={isSubmitting}
@@ -152,15 +162,3 @@ const Contact: React.FC = () => {
 };
 
 export default Contact;
-
-// [
-//   {"start": "2025-07-09T03:30:00.000Z", "end": "2025-07-09T05:30:00.000Z"},
-
-//   {"start": "2025-07-09T06:30:00.000Z", "end": "2025-07-09T07:30:00.000Z"}
-
-// ]
-
-[
-  { start: "2025-07-09T09:00:00", end: "2025-07-09T05:30:00" },
-  { start: "2025-07-09T12:00:00", end: "2025-07-09T13:00:00" },
-];
