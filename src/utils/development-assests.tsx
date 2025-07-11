@@ -6,8 +6,6 @@ export const technologies = [
     { name: 'TypeScript', level: 90, color: 'from-blue-500 to-blue-700', icon: '📘' },
     { name: 'Node.js', level: 85, color: 'from-green-400 to-green-600', icon: '🟢' },
     { name: 'Next.js', level: 88, color: 'from-gray-700 to-gray-900', icon: '▲' },
-    { name: 'Python', level: 80, color: 'from-yellow-400 to-yellow-600', icon: '🐍' },
-    { name: 'AWS', level: 75, color: 'from-orange-400 to-orange-600', icon: '☁️' }
   ];
 
 export const developmentProcess = [
